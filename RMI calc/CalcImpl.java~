@@ -1,0 +1,18 @@
+import java.rmi.*;
+import java.rmi.server.UnicastRemoteObject;
+
+public class ValidatorImpl extends UnicastRemoteObject implements CalcIntr{
+
+	
+
+	protected CalcImpl() throws RemoteException 
+	{
+		super();
+	}
+	
+	public boolean validate(String s) throws RemoteException
+       {
+		return (Math.sqrt(a));
+    	
+         }
+}
