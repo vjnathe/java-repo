@@ -1,7 +1,0 @@
-package com.itc.iomodule;
-
-class InputOutputClass {
-   public static void main(String[] args) {
-	
-}
-}

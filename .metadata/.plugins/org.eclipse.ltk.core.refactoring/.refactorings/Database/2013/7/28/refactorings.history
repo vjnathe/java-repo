@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;com.oracle.dbmodule.DBDemo.java&apos; to &apos;DbDemo.java&apos;&#x0A;- Original project: &apos;Database&apos;&#x0A;- Original element: &apos;com.oracle.dbmodule.DBDemo.java&apos;&#x0A;- Renamed element: &apos;com.oracle.dbmodule.DbDemo.java&apos;" description="Rename compilation unit &apos;DBDemo.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.oracle.dbmodule{DBDemo.java" name="DbDemo.java" references="false" stamp="1373274373084" version="1.0"/>
-</session>
