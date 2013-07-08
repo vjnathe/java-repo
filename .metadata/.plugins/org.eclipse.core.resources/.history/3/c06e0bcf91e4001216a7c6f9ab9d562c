@@ -1,0 +1,48 @@
+package com.itc.fileiomodule;
+import java.io.*;
+
+class FileOperation {
+  private File file;
+  public FileOperation(String f) {
+	file=new File(f);
+}
+  /**
+ * @return void
+ * method for copying one file to other
+ */
+public void copyToFile(String dest) throws Exception  {
+	  if(file.exists())
+	  {
+		  InputStream reader=new FileInputStream(file);
+		  OutputStream writer=new FileOutputStream(dest);
+		  int ch;
+		  while((ch=reader.read())!=-1)
+		  {
+			  writer.write(ch);
+		  }
+		  reader.close();
+		  writer.close();
+		  System.out.println("Copied Succesfully !!!");
+		  return;
+	  }
+	  System.out.println("File Not Present !!!");
+	  return;
+  }
+  public void printFile(String file)  {
+	  this.file=new File(file);
+	  int ch;
+	  if(this.file.exists())
+	  {
+	    InputStream reader=new FileInputStream(this.file);
+	    while()
+	  }
+	  System.out.println("File Not Available to Print !!!");
+	  return;
+  }
+	public static void main(String[] args)throws Exception {
+	    FileOperation fileobj=new FileOperation("input.txt");	
+	    fileobj.copyToFile("output.txt");
+	    fileobj.printFile("output.txt");
+	}
+
+}

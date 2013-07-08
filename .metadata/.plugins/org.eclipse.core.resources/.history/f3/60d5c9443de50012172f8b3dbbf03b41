@@ -1,0 +1,30 @@
+package com.cisco.chatmodule;
+import java.io.*;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
+public class Client {
+
+	@SuppressWarnings("deprecation")
+	public static void main(String[] args) throws IOException {
+		Socket client=null;
+		DataInputStream fromServer;
+		DataOutputStream toServer;
+		try {
+			client=new Socket(InetAddress.getLocalHost(),2233);
+			fromServer=new DataInputStream(client.getInputStream()); 
+			toServer=new DataOutputStream(client.getOutputStream());
+			DataInputStream fromUser=new DataInputStream(System.in);
+			while(true){
+				System.out.println(fromServer.readLine());
+				toServer.println();
+			}
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} 
+       finally {
+    	  client.close();
+       }
+	}
+
+}

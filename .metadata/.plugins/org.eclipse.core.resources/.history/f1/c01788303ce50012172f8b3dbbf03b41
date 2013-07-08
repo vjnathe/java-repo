@@ -1,0 +1,22 @@
+package com.cisco.chatmodule;
+import java.io.*;
+import java.net.InetAddress;
+import java.net.Socket;
+import java.net.UnknownHostException;
+public class Client {
+
+	public static void main(String[] args) {
+		try {
+			Socket client=new Socket(InetAddress.getLocalHost(),2233);
+			while(true){
+				InputStream fromServer=new InputStream(client.getInputStream()); 
+			}
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}

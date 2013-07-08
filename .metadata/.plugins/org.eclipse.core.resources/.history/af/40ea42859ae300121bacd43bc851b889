@@ -1,0 +1,8 @@
+package mathmodule;
+
+public class Snippet {
+	public static void main(String[] args) {
+		System.out.println("Polygon with "+ref.getSides()+" Sides Having Inner Angle:="+ref.calculateInnerAngle()+" And Perimeter:="+ref.calcPerimeter());
+	}
+}
+

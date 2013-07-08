@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;SocketProgramming&apos;&#x0A;- Original project: &apos;SocketProgramming&apos;&#x0A;- Original elements:&#x0A;     Client.java~&#x0A;     Server.java~" description="Delete elements" element1="src/com/cisco/chatmodule/Client.java~" element2="src/com/cisco/chatmodule/Server.java~" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1373013985479" subPackages="false" version="1.0"/>
+</session>

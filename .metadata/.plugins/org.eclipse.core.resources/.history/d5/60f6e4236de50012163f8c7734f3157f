@@ -1,0 +1,25 @@
+package com.cisco.rmimodule;
+
+import java.net.MalformedURLException;
+import java.rmi.*;
+
+public class Server {
+
+	public Server() {
+		try {
+			Validator remObj = new ValidatorImpl();
+			Naming.rebind("rmi://localhost:1095/ValidatorService", remObj);
+
+		} catch (RemoteException e) {
+			System.out.println(e);
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+		new Server();
+	}
+
+}

@@ -1,0 +1,98 @@
+package com.xcompany.hmmodule;
+
+import java.util.*;
+
+class HashMapDemo {
+	
+		private long id,age;
+		private String name,college;
+		private Map<Long,String>list;
+		
+        public HashMapDemo()  {
+        	
+        	list=new HashMap<Long,String>();	
+        }
+		public long getId() {
+			return id;
+		}
+
+
+		public void setId(long id) {
+			this.id = id;
+		}
+
+
+		public long getAge() {
+			return age;
+		}
+
+
+		public void setAge(long age) {
+			this.age = age;
+		}
+
+
+		public String getName() {
+			return name;
+		}
+
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+
+		public String getCollege() {
+			return college;
+		}
+
+
+		public void setCollege(String college) {
+			this.college = college;
+		}
+        public void setHash()  {
+        
+        	list.put(new Long(this.getId()),this.getName());
+        }
+        public static void getValue(Long l)  {
+        	
+        	
+        }
+	    
+		public static void main(String[] args) {
+			
+	       HashMapDemo persons[] =new HashMapDemo[5];
+	       
+	       for (int i = 0; i < persons.length; i++) {
+	       persons[i]=new HashMapDemo();
+		   persons[i].setId(i+1);
+			
+		}
+	       persons[0].setName("Vijayraj");
+	       persons[0].setCollege("MIT");
+	       persons[0].setAge(24);
+	       persons[1].setName("Anvay");
+	       persons[1].setCollege("SCOE");
+	       persons[1].setAge(21);
+	       persons[2].setName("Rana");
+	       persons[2].setCollege("PBVBCET");
+	       persons[2].setAge(21);
+	       persons[3].setName("Swaroop");
+	       persons[3].setCollege("MITCOE");
+	       persons[3].setAge(21);
+	       persons[4].setName("Akash");
+	       persons[4].setCollege("MITCOE");
+	       persons[4].setAge(20);
+	       
+	       
+	       
+	       for (int i = 0; i < persons.length; i++) {
+	    	   persons[i].setHash();
+		   }
+	       
+		     
+		   System.out.println("Value Mapped to key 1 is:="+ HashMapDemo.getValue(new Long(1));
+		}
+		
+		}
+	

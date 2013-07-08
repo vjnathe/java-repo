@@ -1,0 +1,5 @@
+package mathmodule;
+
+public interface Polygonable {
+
+}

@@ -1,0 +1,6 @@
+package mathmodule;
+
+public interface Polygonable {
+	
+	int calculateInnerAngle();
+}

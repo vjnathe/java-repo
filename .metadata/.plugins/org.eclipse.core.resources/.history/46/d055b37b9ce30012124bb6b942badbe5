@@ -1,0 +1,9 @@
+package com.itc.iomodule;
+
+class InputOutputClass {
+	String name;
+	int phoneNumber;
+   public static void main(String[] args) {
+	
+   }
+}

@@ -1,0 +1,215 @@
+package mathmodule;
+
+class Tringle implements Polygonable  {
+	
+  private int noOfSides;
+  private float sides[];
+  
+  public Tringle(int noOfSides,float sides[])  {
+	  
+    this.noOfSides=noOfSides;
+    sides=new float[noOfSides];
+    
+    for(int i=0;i<noOfSides;i++)
+    this.sides[i]=sides[i];	
+  }
+  
+  public int getSides()  {
+	  
+    return this.noOfSides;
+  }
+  
+  public int calculateInnerAngle()  {
+	  
+    return (180*(noOfSides-2));
+  }
+  public float calcPerimeter() {
+	  
+	float peri=0.0f;
+	for(int i=0;i<noOfSides;i++)
+	sum+=sides[i];	
+	return 0.0f;
+	
+  }
+}
+
+class Quadrilateral implements Polygonable  {
+  
+  private int noOfSides; 
+  
+  public Quadrilateral(int noOfSides)  {
+	  
+    this.noOfSides=noOfSides;
+  }
+  
+  public int getSides()  {
+	  
+    return this.noOfSides;
+  }
+  
+  public int calculateInnerAngle()  {
+	  
+    return (180*(noOfSides-2));
+  }
+  
+  public float calcPerimeter() {
+	  
+		return 0.0f;
+		
+	  }
+}
+
+class Pentagone implements Polygonable  {
+  
+private int noOfSides; 
+  
+  public Pentagone(int noOfSides)  {
+	  
+    this.noOfSides=noOfSides;
+  }
+  
+  public int getSides()  {
+	  
+    return this.noOfSides;
+  }
+  
+  public int calculateInnerAngle()  {
+	  
+    return (180*(noOfSides-2));
+  }
+  
+  public float calcPerimeter() {
+	  
+		return 0.0f;
+		
+	  }
+}
+
+class Hexagone implements Polygonable  {
+	
+  private int noOfSides; 
+  
+  public Hexagone(int noOfSides)  {
+	  
+    this.noOfSides=noOfSides;
+  }
+  
+  public int getSides()  {
+    return this.noOfSides;
+  }
+  
+  public int calculateInnerAngle()  {
+	  
+    return (180*(noOfSides-2));
+  }
+  
+  public float calcPerimeter() {
+	  
+		return 0.0f;
+		
+	  }
+}
+
+class Heptagon implements Polygonable  {
+	
+  private int noOfSides; 
+  
+  public Heptagon(int noOfSides)  {
+
+	  this.noOfSides=noOfSides;
+  }
+  
+  public int getSides()  {
+	  
+    return this.noOfSides;
+  }
+  
+  public int calculateInnerAngle()  {
+	  
+    return (180*(noOfSides-2));
+  }
+  
+  public float calcPerimeter() {
+	  
+		return 0.0f;
+		
+	  }
+}
+
+class Octagon implements Polygonable  {
+	
+  private int noOfSides; 
+  
+  public Octagon(int noOfSides)  {
+	  
+    this.noOfSides=noOfSides;
+  }
+  
+  public int getSides()  {
+	  
+    return this.noOfSides;
+  }
+  
+  public int calculateInnerAngle()  {
+	  
+    return (180*(noOfSides-2));
+  }
+  
+  public float calcPerimeter() {
+	  
+		return 0.0f;
+		
+	  }
+}
+
+class Decagon implements Polygonable  {
+	
+  private int noOfSides; 
+  
+  public Decagon(int noOfSides)  {
+	  
+    this.noOfSides=noOfSides;
+  }
+  
+  public int getSides()  {
+	   
+    return this.noOfSides;
+  }
+  
+  public int calculateInnerAngle()  {
+	  
+    return (180*(noOfSides-2));
+    
+  }
+  
+  public float calcPerimeter() {
+	  
+		return 0.0f;
+		
+	  }
+}
+
+public class Polygon {
+
+	public static void main(String[] args) {
+		
+		   Polygonable ref;
+	       ref=new Tringle(3,new float[]{10.2f,20.5f,30.0f});
+	       System.out.println("Polygon with "+ref.getSides()+" Sides Having Inner Angle:="+ref.calculateInnerAngle()+" And Perimeter:="+ref.calcPerimeter());
+	       ref=new Quadrilateral(4);
+	       System.out.println("Inner angle of polygon with "+ref.getSides()+" Sides Is:="+ref.calculateInnerAngle());
+	       ref=new Pentagone(5);
+	       System.out.println("Inner angle of polygon with "+ref.getSides()+" Sides Is:="+ref.calculateInnerAngle());
+	       ref=new Hexagone(6);
+	       System.out.println("Inner angle of polygon with "+ref.getSides()+" Sides Is:="+ref.calculateInnerAngle());
+	       ref=new Heptagon(7);
+	       System.out.println("Inner angle of polygon with "+ref.getSides()+" Sides Is:="+ref.calculateInnerAngle());
+	       ref=new Octagon(8);
+	       System.out.println("Inner angle of polygon with "+ref.getSides()+" Sides Is:="+ref.calculateInnerAngle());
+	       ref=new Decagon(10);
+	       System.out.println("Inner angle of polygon with "+ref.getSides()+" Sides Is:="+ref.calculateInnerAngle());
+	}
+
+}
+
+
