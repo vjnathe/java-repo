@@ -6,10 +6,10 @@ package com.webonise.enterprisemodule.service;
 import com.webonise.enterprisemodule.model.Department;
 
 /**
- * @author webonise
- *
+ * @author Vijayraj Nathe DepartmentService interface is service provider for
+ *         registration of department.
  */
 public interface DepartmentService {
-	public void addDepartment(Department d);
+	public boolean addDepartment(Department d);
 
 }

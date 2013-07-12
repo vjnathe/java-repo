@@ -6,10 +6,11 @@ package com.webonise.enterprisemodule.service;
 import com.webonise.enterprisemodule.model.Employee;
 
 /**
- * @author webonise
- *
+ * @author Vijayraj Nathe 
+ * EmployeeService interface is a service provider for
+ *         registration of employee.
  */
 public interface EmployeeService {
-	public void addEmployee(Employee e);
+	public boolean addEmployee(Employee e);
 
 }
