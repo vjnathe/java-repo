@@ -14,7 +14,7 @@ class Client extends Thread {
 	Thread read, write;
 
 	public Client() throws Exception {
-		connected = new Socket("localhost", 6001);
+		connected = new Socket("localhost", 6002);
 
 		out = new PrintWriter(connected.getOutputStream(), true);
 		in = new BufferedReader(new InputStreamReader(

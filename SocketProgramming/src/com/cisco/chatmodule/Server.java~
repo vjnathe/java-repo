@@ -15,7 +15,7 @@ class Server extends Thread {
 	Thread read, write;
 
 	public Server() throws Exception {
-		server = new ServerSocket(6002);
+		server = new ServerSocket(6001);
 		System.out.println("Server Waiting for connection !!!");
 		connected = server.accept();
 		System.out.println("Client Connected:=" + connected.getInetAddress()
